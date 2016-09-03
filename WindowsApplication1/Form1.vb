@@ -4,7 +4,7 @@ Public Class Form1
         MsgBox("ssss" & GetFileSize("c:\test.bgh"))
     End Sub
     Public Function GetFileSize(file_path As String) As Double
-        ''
+        ' vraci velikost souboru na disku
         Dim gfsfi As New IO.FileInfo(file_path)
         Dim gfssize As Long = gfsfi.Length
         GetFileSize = gfssize
